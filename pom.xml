@@ -12,6 +12,7 @@
   <properties>
     <colt.version>1.2.0</colt.version>
     <commons.codec.version>1.5</commons.codec.version>
+    <commons.io.version>2.0.1</commons.io.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.math.version>1.2</commons.math.version>
     <commons.beanutils.version>1.7.0</commons.beanutils.version>
@@ -27,6 +28,7 @@
     <httpclient.version>4.5.1</httpclient.version>
     <jackson-mapper-lgpl.version>1.9.2</jackson-mapper-lgpl.version>
     <jackson-core-lgpl.version>1.9.2</jackson-core-lgpl.version>
+    <jackson-xc.version>1.9.2</jackson-xc.version>
     <jackson-lgpl.version>0.9.5</jackson-lgpl.version>
     <javaee.version>6.0</javaee.version>
     <javaxpcom.version>1.9.2</javaxpcom.version>
