@@ -11,6 +11,7 @@
   <packaging>pom</packaging>
   <properties>
     <colt.version>1.2.0</colt.version>
+    <commons.codec.version>1.5</commons.codec.version>
     <commons.lang.version>2.6</commons.lang.version>
     <commons.math.version>1.2</commons.math.version>
     <commons.beanutils.version>1.7.0</commons.beanutils.version>
