@@ -93,50 +93,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>2.5</version>
-      </plugin>
-      <plugin>
-        <groupId>ro.isdc.wro4j</groupId>
-        <artifactId>wro4j-maven-plugin</artifactId>
-        <version>${wro4j.version}</version>
-        <executions>
-          <execution>
-            <phase>compile</phase>
-            <goals>
-              <goal>jshint</goal>
-              <goal>csslint</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <options>noarg</options>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>xml-maven-plugin</artifactId>
-        <version>1.0.1</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>validate</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <validationSets>
-            <validationSet>
-              <dir>src/main/webapp/WEB-INF/velocity</dir>
-              <includes>
-                <include>**/*.vm</include>
-              </includes>
-            </validationSet>
-          </validationSets>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
   <reporting>
