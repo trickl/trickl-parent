@@ -93,6 +93,14 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>flatten-maven-plugin</artifactId>
         <version>1.0.0</version>
+        <executions>
+          <execution>
+            <phase>install</phase> <!-- bind to the install phase -->
+            <goals>
+              <goal>flatten</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
