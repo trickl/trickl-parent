@@ -150,4 +150,18 @@
       </plugin>
     </plugins>
   </reporting>
+  <distributionManagement>
+    <repository>
+      <id>trickl-release-repository</id>
+      <name>Trickl Release Repository</name>
+      <url>${deploy.releases.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>trickl-snapshot-repository</id>
+      <name>Trickl Snapshot Repository</name>
+      <url>${deploy.snapshots.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
+
+
