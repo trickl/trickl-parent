@@ -34,10 +34,10 @@
     <hibernate.version>5.0.6.Final</hibernate.version>
     <htmlcleaner.version>2.16</htmlcleaner.version>
     <httpclient.version>4.5.1</httpclient.version>
-    <jackson-mapper-lgpl.version>1.9.2</jackson-mapper-lgpl.version>
-    <jackson-core-lgpl.version>1.9.2</jackson-core-lgpl.version>
-    <jackson-xc.version>1.9.2</jackson-xc.version>
-    <jackson-lgpl.version>0.9.5</jackson-lgpl.version>
+    <jackson-databind.version>2.7.0</jackson-databind.version>
+    <jackson-core.version>2.7.0</jackson-core.version>
+    <jackson-annotations.version>2.7.0</jackson-annotations.version>
+    <jackson-module-jaxb-annotations.version>2.7.0</jackson-module-jaxb-annotations.version>
     <javaee.version>6.0</javaee.version>
     <javaxpcom.version>1.9.2</javaxpcom.version>
     <javax.mail.version>1.4</javax.mail.version>
@@ -112,7 +112,61 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>buildnumber-maven-plugin</artifactId>
+        <version>1.4</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>create</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <doCheck>false</doCheck>
+          <doUpdate>false</doUpdate>
+          <shortRevisionLength>8</shortRevisionLength>
+        </configuration>
+      </plugin>  
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            </manifest>
+            <manifestEntries>
+              <Implementation-Build>$\{buildNumber}</Implementation-Build>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+            </manifest>
+            <manifestEntries>
+              <Implementation-Build>$\{buildNumber}</Implementation-Build>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
     </plugins>
+    <resources>
+       <resource>
+          <directory>src/main/resources</directory>
+          <filtering>true</filtering>
+       </resource>
+    </resources>
   </build>
   <reporting>
     <plugins>
