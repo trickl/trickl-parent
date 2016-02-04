@@ -88,6 +88,10 @@
     <name>Trickl</name>
     <url>http://trickl.com</url>
   </organization>
+  <scm>
+    <url>https://github.com/trickl/trickl-parent</url>
+    <connection>scm:git://github.com/trickl/trickl-parent.git</connection>
+  </scm>
   <build>
     <plugins>
       <plugin>
