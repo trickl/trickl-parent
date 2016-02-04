@@ -10,6 +10,8 @@
   <version>0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
+    <build.timestamp>${maven.build.timestamp}</build.timestamp>
+    <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
     <colt.version>1.2.0</colt.version>
     <commons.codec.version>1.5</commons.codec.version>
     <commons.collections.version>3.2</commons.collections.version>
