@@ -166,6 +166,23 @@
           </archive>
         </configuration>
       </plugin>
+      <plugin>
+        <!-- Set the hostname property -->
+        <groupId>org.codehaus.gmaven</groupId>
+        <artifactId>gmaven-plugin</artifactId>
+        <version>1.5</version>
+        <executions>
+          <execution>
+            <phase>generate-resources</phase>
+              <goals>
+                <goal>execute</goal>
+              </goals>
+            <configuration>
+              <source>project.properties["hostname"] = InetAddress.getLocalHost().getHostName()</source>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
     <resources>
        <resource>
