@@ -22,7 +22,7 @@
     <commons.beanutils.version>1.7.0</commons.beanutils.version>
     <dbunit.version>2.5.1</dbunit.version> 
     <droids.version>0.1.0-incubating</droids.version> 
-    <easymock.version>2.0</easymock.version>
+    <easymock.version>3.4</easymock.version>
     <geodb.version>0.8</geodb.version>
     <glassfish.javax.servlet.version>3.0</glassfish.javax.servlet.version>
     <glassfish.javax.ejb.version>4.0-b33</glassfish.javax.ejb.version>
