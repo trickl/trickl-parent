@@ -58,7 +58,7 @@
     <mozdom4java.version>1.3</mozdom4java.version>
     <mozilla-interfaces.version>1.9.2</mozilla-interfaces.version>
     <mysql-connector-java.version>5.1.15</mysql-connector-java.version>
-    <nekohtml.version>1.9.15</nekohtml.version>
+    <nekohtml.version>1.9.22</nekohtml.version>
     <persistence-api.version>1.0</persistence-api.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <simmetrics.version>4.0.1</simmetrics.version>
