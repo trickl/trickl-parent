@@ -34,6 +34,7 @@
     <hibernate-jpa.version>1.0.0.Final</hibernate-jpa.version>
     <hibernate.persistence.version>1.0.2.GA</hibernate.persistence.version>
     <hibernate-spatial.version>5.0.7.Final</hibernate-spatial.version>
+    <hibernate-validator.version>5.0.3.Final</hibernate-validator.version>
     <hibernate.version>5.0.7.Final</hibernate.version>
     <htmlcleaner.version>2.16</htmlcleaner.version>
     <httpclient.version>4.5.1</httpclient.version>
