@@ -80,6 +80,7 @@
     <umfpack.version>5.4.0</umfpack.version>
     <velocity-tools.version>2.0</velocity-tools.version>
     <velocity.version>1.7</velocity.version>
+    <weka.version>3.6.14</weka.version>
     <wro4j.version>1.4.0</wro4j.version>
     <xerces.version>2.9.1</xerces.version>
     <xmlunit.version>1.3</xmlunit.version>
