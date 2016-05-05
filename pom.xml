@@ -58,6 +58,7 @@
     <jtidy.version>r938</jtidy.version>
     <jts.version>1.13</jts.version>
     <junit.version>4.12</junit.version>
+    <junit-addons.version>1.4</junit-addons.version>
     <lucene.version>5.5.0</lucene.version>
     <mozdom4java.version>1.3</mozdom4java.version>
     <mozilla-interfaces.version>1.9.2</mozilla-interfaces.version>
